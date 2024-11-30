@@ -27,6 +27,11 @@ header {
     width: 100%;
 }
 
+nav{
+    position: sticky;
+    top: 16px;
+}
+
 main {
     width: 90%;
     margin: 0 auto;
@@ -89,8 +94,6 @@ ul li a:hover{
 }
 
 #header-bottom {
-    position: sticky;
-    top: 16px;
     background-color: var(--color4);
     margin: 15px auto 0 auto;
     border-radius: 10px;
