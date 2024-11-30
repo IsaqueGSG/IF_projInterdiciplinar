@@ -90,7 +90,7 @@ ul li a:hover{
 
 #header-bottom {
     position: sticky;
-    top: 1rem;
+    top: 16px;
     background-color: var(--color4);
     margin: 15px auto 0 auto;
     border-radius: 10px;
