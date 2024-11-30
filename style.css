@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*geral*/
+:root {
+    --color1: #ECEBE4;
+    --color2: #CC998D;
+    --color3: #16F4D0;
+    --color4: #429EA6;
+    --color5: #153B50;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/*tags gerais*/
+body {
+    background-color: var(--color1);
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    color: var(--color5);
+    background-color: var(--color1);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+h1,h2,h3 {
+    color: var(--color5)
+}
+
+h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    transition: all .2s ease-in-out;
+    color: var(--color1);
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--color5);
+    margin-bottom: 1rem;
+}
+
+
+/*Fontes utilizadas durante o projeto*/
+ul li{
+    margin-left: 20px;
+}
+ul li a{
+    color: var(--color5);
+    line-height: 2rem;
+}
+ul li a:hover{
+    font-size: 1.1rem;
+    transition: .1s ease-in-out;
+}
+
+/*Header*/
+#titulo {
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    margin: auto;
+}
+
+#header-top {
+    background-color: var(--color5);
+    padding: 3vh;
+    display: flex;
+}
+
+#header-bottom {
+    background-color: var(--color4);
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    padding: 1.5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header-bottom a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 33%;
+    text-align: center;
+}
+
+#header-bottom a:hover {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#btn_toggle_theme {
+    color: white;
+    background-color: var(--color5);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 0px 0px 5px 2px white inset;
+    margin-left: auto;
+}
+
+
+
+/*imagens*/
+.img_container {
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img_container img {
+    margin: 1rem;
+    width: 20%;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    object-fit: cover;
+}
+.img_container img:hover {
+    transform: scale(1.1);
+}
+
+.img_container .fullWhidth { /*Usar em imagens expecificas para ficar graade*/
+    width: 90%;
+}
+
+
+/*tabela de dados*/
+table{
+    border: 1px dotted;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+th{
+    padding: .3vh;
+    border: 1px solid;
+}
+.local{
+    text-align: left;
+    padding-left: 15px;
+}
+td{
+    border-left: 1px dotted;
+    border-right: 1px dotted;
+}
+
+
+/*codigo*/
+pre{
+    margin: 0 auto;
+}
+code {
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: block;
+    overflow: auto;
+}
+span{
+    color: green;
+}
+
+
+@media (max-width: 700px) {
+    
+    /*imagens almenta em telas maiores que 700px*/
+    .img_container img {
+        width: 100%;
+    }
+}
