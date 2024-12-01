@@ -28,6 +28,7 @@ header {
 }
 
 nav{
+    z-index:1;
     position: sticky;
     top: 16px;
 }
